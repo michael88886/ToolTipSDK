@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7890C9DC229949F7006DE908 /* MKToolTipFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7890C9D2229949F7006DE908 /* MKToolTipFramework.framework */; };
+		7890C9E1229949F7006DE908 /* MKToolTipFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9E0229949F7006DE908 /* MKToolTipFrameworkTests.m */; };
+		7890C9E3229949F7006DE908 /* MKToolTipFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890C9D5229949F7006DE908 /* MKToolTipFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7890C9EE22994CBC006DE908 /* MKToolTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890C9EC22994CBC006DE908 /* MKToolTipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7890C9EF22994CBC006DE908 /* MKToolTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9ED22994CBC006DE908 /* MKToolTipView.m */; };
+		7890C9F722994E32006DE908 /* DataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890C9F122994E32006DE908 /* DataItem.h */; };
+		7890C9F822994E32006DE908 /* OwnerInfoItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890C9F222994E32006DE908 /* OwnerInfoItem.h */; };
+		7890C9F922994E32006DE908 /* TagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9F322994E32006DE908 /* TagItem.m */; };
+		7890C9FA22994E32006DE908 /* TagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9F322994E32006DE908 /* TagItem.m */; };
+		7890C9FB22994E32006DE908 /* OwnerInfoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9F422994E32006DE908 /* OwnerInfoItem.m */; };
+		7890C9FC22994E32006DE908 /* OwnerInfoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9F422994E32006DE908 /* OwnerInfoItem.m */; };
+		7890C9FD22994E32006DE908 /* DataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9F522994E32006DE908 /* DataItem.m */; };
+		7890C9FE22994E32006DE908 /* DataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9F522994E32006DE908 /* DataItem.m */; };
+		7890C9FF22994E32006DE908 /* TagItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890C9F622994E32006DE908 /* TagItem.h */; };
+		7890CA0322994E93006DE908 /* ToolTip.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7890CA0022994E93006DE908 /* ToolTip.xib */; };
+		7890CA0422994E93006DE908 /* ToolTip.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7890CA0022994E93006DE908 /* ToolTip.xib */; };
+		7890CA0522994E93006DE908 /* ToolTip.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890CA0122994E93006DE908 /* ToolTip.h */; };
+		7890CA0622994E93006DE908 /* ToolTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890CA0222994E93006DE908 /* ToolTip.m */; };
+		7890CA0722994E93006DE908 /* ToolTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890CA0222994E93006DE908 /* ToolTip.m */; };
+		7890CA11229997B3006DE908 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 7890CA10229997B3006DE908 /* data.json */; };
+		7890CA22229A923B006DE908 /* Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7890CA20229A923B006DE908 /* Helper.h */; };
+		7890CA23229A923B006DE908 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890CA21229A923B006DE908 /* Helper.m */; };
+		7890CA24229AA359006DE908 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890CA21229A923B006DE908 /* Helper.m */; };
+		7890CA25229AA361006DE908 /* MKToolTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7890C9ED22994CBC006DE908 /* MKToolTipView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7890C9DD229949F7006DE908 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7890C9C9229949F7006DE908 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7890C9D1229949F7006DE908;
+			remoteInfo = MKToolTipFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7890C9D2229949F7006DE908 /* MKToolTipFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKToolTipFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7890C9D5229949F7006DE908 /* MKToolTipFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKToolTipFramework.h; sourceTree = "<group>"; };
+		7890C9D6229949F7006DE908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7890C9DB229949F7006DE908 /* MKToolTipFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKToolTipFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7890C9E0229949F7006DE908 /* MKToolTipFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKToolTipFrameworkTests.m; sourceTree = "<group>"; };
+		7890C9E2229949F7006DE908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7890C9EC22994CBC006DE908 /* MKToolTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKToolTipView.h; sourceTree = "<group>"; };
+		7890C9ED22994CBC006DE908 /* MKToolTipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKToolTipView.m; sourceTree = "<group>"; };
+		7890C9F122994E32006DE908 /* DataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataItem.h; sourceTree = "<group>"; };
+		7890C9F222994E32006DE908 /* OwnerInfoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnerInfoItem.h; sourceTree = "<group>"; };
+		7890C9F322994E32006DE908 /* TagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagItem.m; sourceTree = "<group>"; };
+		7890C9F422994E32006DE908 /* OwnerInfoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnerInfoItem.m; sourceTree = "<group>"; };
+		7890C9F522994E32006DE908 /* DataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataItem.m; sourceTree = "<group>"; };
+		7890C9F622994E32006DE908 /* TagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagItem.h; sourceTree = "<group>"; };
+		7890CA0022994E93006DE908 /* ToolTip.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToolTip.xib; sourceTree = "<group>"; };
+		7890CA0122994E93006DE908 /* ToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolTip.h; sourceTree = "<group>"; };
+		7890CA0222994E93006DE908 /* ToolTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolTip.m; sourceTree = "<group>"; };
+		7890CA10229997B3006DE908 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		7890CA20229A923B006DE908 /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		7890CA21229A923B006DE908 /* Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7890C9CF229949F7006DE908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7890C9D8229949F7006DE908 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7890C9DC229949F7006DE908 /* MKToolTipFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7890C9C8229949F7006DE908 = {
+			isa = PBXGroup;
+			children = (
+				7890C9D4229949F7006DE908 /* MKToolTipFramework */,
+				7890C9DF229949F7006DE908 /* MKToolTipFrameworkTests */,
+				7890C9D3229949F7006DE908 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7890C9D3229949F7006DE908 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7890C9D2229949F7006DE908 /* MKToolTipFramework.framework */,
+				7890C9DB229949F7006DE908 /* MKToolTipFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7890C9D4229949F7006DE908 /* MKToolTipFramework */ = {
+			isa = PBXGroup;
+			children = (
+				7890C9D5229949F7006DE908 /* MKToolTipFramework.h */,
+				7890C9EC22994CBC006DE908 /* MKToolTipView.h */,
+				7890C9ED22994CBC006DE908 /* MKToolTipView.m */,
+				7890CA20229A923B006DE908 /* Helper.h */,
+				7890CA21229A923B006DE908 /* Helper.m */,
+				7890CA0822994E97006DE908 /* ToolTip */,
+				7890C9F022994E32006DE908 /* Model */,
+				7890C9D6229949F7006DE908 /* Info.plist */,
+			);
+			path = MKToolTipFramework;
+			sourceTree = "<group>";
+		};
+		7890C9DF229949F7006DE908 /* MKToolTipFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				7890C9E0229949F7006DE908 /* MKToolTipFrameworkTests.m */,
+				7890CA10229997B3006DE908 /* data.json */,
+				7890C9E2229949F7006DE908 /* Info.plist */,
+			);
+			path = MKToolTipFrameworkTests;
+			sourceTree = "<group>";
+		};
+		7890C9F022994E32006DE908 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7890C9F122994E32006DE908 /* DataItem.h */,
+				7890C9F522994E32006DE908 /* DataItem.m */,
+				7890C9F222994E32006DE908 /* OwnerInfoItem.h */,
+				7890C9F422994E32006DE908 /* OwnerInfoItem.m */,
+				7890C9F622994E32006DE908 /* TagItem.h */,
+				7890C9F322994E32006DE908 /* TagItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7890CA0822994E97006DE908 /* ToolTip */ = {
+			isa = PBXGroup;
+			children = (
+				7890CA0122994E93006DE908 /* ToolTip.h */,
+				7890CA0222994E93006DE908 /* ToolTip.m */,
+				7890CA0022994E93006DE908 /* ToolTip.xib */,
+			);
+			path = ToolTip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7890C9CD229949F7006DE908 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7890CA22229A923B006DE908 /* Helper.h in Headers */,
+				7890C9EE22994CBC006DE908 /* MKToolTipView.h in Headers */,
+				7890CA0522994E93006DE908 /* ToolTip.h in Headers */,
+				7890C9F722994E32006DE908 /* DataItem.h in Headers */,
+				7890C9E3229949F7006DE908 /* MKToolTipFramework.h in Headers */,
+				7890C9F822994E32006DE908 /* OwnerInfoItem.h in Headers */,
+				7890C9FF22994E32006DE908 /* TagItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7890C9D1229949F7006DE908 /* MKToolTipFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7890C9E6229949F7006DE908 /* Build configuration list for PBXNativeTarget "MKToolTipFramework" */;
+			buildPhases = (
+				7890C9CD229949F7006DE908 /* Headers */,
+				7890C9CE229949F7006DE908 /* Sources */,
+				7890C9CF229949F7006DE908 /* Frameworks */,
+				7890C9D0229949F7006DE908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKToolTipFramework;
+			productName = MKToolTipFramework;
+			productReference = 7890C9D2229949F7006DE908 /* MKToolTipFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7890C9DA229949F7006DE908 /* MKToolTipFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7890C9E9229949F7006DE908 /* Build configuration list for PBXNativeTarget "MKToolTipFrameworkTests" */;
+			buildPhases = (
+				7890C9D7229949F7006DE908 /* Sources */,
+				7890C9D8229949F7006DE908 /* Frameworks */,
+				7890C9D9229949F7006DE908 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7890C9DE229949F7006DE908 /* PBXTargetDependency */,
+			);
+			name = MKToolTipFrameworkTests;
+			productName = MKToolTipFrameworkTests;
+			productReference = 7890C9DB229949F7006DE908 /* MKToolTipFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7890C9C9229949F7006DE908 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "mk mk";
+				TargetAttributes = {
+					7890C9D1229949F7006DE908 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7890C9DA229949F7006DE908 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7890C9CC229949F7006DE908 /* Build configuration list for PBXProject "MKToolTipFramework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7890C9C8229949F7006DE908;
+			productRefGroup = 7890C9D3229949F7006DE908 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7890C9D1229949F7006DE908 /* MKToolTipFramework */,
+				7890C9DA229949F7006DE908 /* MKToolTipFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7890C9D0229949F7006DE908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7890CA0322994E93006DE908 /* ToolTip.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7890C9D9229949F7006DE908 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7890CA0422994E93006DE908 /* ToolTip.xib in Resources */,
+				7890CA11229997B3006DE908 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7890C9CE229949F7006DE908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7890CA0622994E93006DE908 /* ToolTip.m in Sources */,
+				7890CA23229A923B006DE908 /* Helper.m in Sources */,
+				7890C9EF22994CBC006DE908 /* MKToolTipView.m in Sources */,
+				7890C9F922994E32006DE908 /* TagItem.m in Sources */,
+				7890C9FD22994E32006DE908 /* DataItem.m in Sources */,
+				7890C9FB22994E32006DE908 /* OwnerInfoItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7890C9D7229949F7006DE908 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7890CA0722994E93006DE908 /* ToolTip.m in Sources */,
+				7890CA24229AA359006DE908 /* Helper.m in Sources */,
+				7890C9E1229949F7006DE908 /* MKToolTipFrameworkTests.m in Sources */,
+				7890C9FA22994E32006DE908 /* TagItem.m in Sources */,
+				7890C9FE22994E32006DE908 /* DataItem.m in Sources */,
+				7890C9FC22994E32006DE908 /* OwnerInfoItem.m in Sources */,
+				7890CA25229AA361006DE908 /* MKToolTipView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7890C9DE229949F7006DE908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7890C9D1229949F7006DE908 /* MKToolTipFramework */;
+			targetProxy = 7890C9DD229949F7006DE908 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7890C9E4229949F7006DE908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7890C9E5229949F7006DE908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7890C9E7229949F7006DE908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 46P3B2F73K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MKToolTipFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mc2.toolpitTest.MKToolTipFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7890C9E8229949F7006DE908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 46P3B2F73K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MKToolTipFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mc2.toolpitTest.MKToolTipFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7890C9EA229949F7006DE908 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46P3B2F73K;
+				INFOPLIST_FILE = MKToolTipFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mc2.toolpitTest.MKToolTipFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7890C9EB229949F7006DE908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 46P3B2F73K;
+				INFOPLIST_FILE = MKToolTipFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mc2.toolpitTest.MKToolTipFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7890C9CC229949F7006DE908 /* Build configuration list for PBXProject "MKToolTipFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7890C9E4229949F7006DE908 /* Debug */,
+				7890C9E5229949F7006DE908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7890C9E6229949F7006DE908 /* Build configuration list for PBXNativeTarget "MKToolTipFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7890C9E7229949F7006DE908 /* Debug */,
+				7890C9E8229949F7006DE908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7890C9E9229949F7006DE908 /* Build configuration list for PBXNativeTarget "MKToolTipFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7890C9EA229949F7006DE908 /* Debug */,
+				7890C9EB229949F7006DE908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7890C9C9229949F7006DE908 /* Project object */;
+}

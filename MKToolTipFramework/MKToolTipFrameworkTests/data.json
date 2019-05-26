@@ -1,0 +1,31 @@
+{
+    "data":[
+        {
+            "id":56,
+            "image":"https://s3.ap-south-1.amazonaws.com/dummy-api-public/post/56.jpeg",
+            "message":"black pug with gray knit scarf",
+            "createdAt":"2019-01-17T17:53:21.639Z",
+            "tags":[
+                {
+                    "title":"dummy"
+                },
+                {
+                    "title":"common"
+                },
+                {
+                    "title":"tag"
+                }
+            ],
+            "owner":{
+                "id":27,
+                "nameTitle":"mr",
+                "firstName":"Julio",
+                "lastName":"Scott",
+                "image":"https://randomuser.me/api/portraits/men/98.jpg"
+            }
+        }
+    ],
+    "total":120,
+    "page":0,
+    "limit":1
+}
