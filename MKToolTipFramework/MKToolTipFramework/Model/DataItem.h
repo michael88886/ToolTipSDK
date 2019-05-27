@@ -10,7 +10,6 @@
 #import "TagItem.h"
 #import "OwnerInfoItem.h"
 
-
 @interface DataItem : NSObject
 
 @property (nonatomic) NSNumber *dataID;
@@ -22,6 +21,7 @@
 @property (nonatomic, strong) NSNumber *total;
 @property (nonatomic, strong) NSNumber *page;
 
+// - Create new DataItem object
 +(DataItem *) newDataWith: (NSDictionary *) json;
 
 @end

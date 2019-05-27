@@ -19,6 +19,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *usrImgView;
 @property (nonatomic, weak) IBOutlet UILabel *usrTitle;
 @property (nonatomic, weak) IBOutlet UILabel *usrName;
+@property (nonatomic, weak) IBOutlet UILabel *usrIDLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *imgView;
 @property (nonatomic, weak) IBOutlet UITextView *msgView;
 @property (nonatomic, weak) IBOutlet UILabel *createTime;
@@ -28,5 +29,6 @@
 
 // - Declare functions
 -(void) showTooltip: (DataItem *) data;
+-(void) feedData: (DataItem *) data;
 
 @end

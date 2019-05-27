@@ -18,6 +18,7 @@
 // MARK: Custom init
 -(id) initNewOwnerInfo {
 	if (self = [super init]) {
+		// - Default value 
 		self.ownerID = [NSNumber numberWithInteger: -1];
 		self.title = @"";
 		self.fName = @"";

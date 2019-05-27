@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+// - Helper class (utility functions for the project)
 @interface Helper : NSObject
 
 +(UIImage *) imageFromURL: (NSString *) url;

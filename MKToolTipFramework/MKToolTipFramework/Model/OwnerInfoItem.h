@@ -16,6 +16,7 @@
 @property (nonatomic, strong) NSString *lName;
 @property (nonatomic, strong) NSString *imgURL;
 
+// - Create new OwnerInfoItem object
 +(OwnerInfoItem *) newOwnerInfo;
 
 @end

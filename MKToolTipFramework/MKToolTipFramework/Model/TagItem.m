@@ -18,6 +18,7 @@
 // MARK: Custon init
 -(id) initNewTag {
 	if (self = [super init]){
+		// - Initialing array for collecting tags
 		self.titles = [NSMutableArray new];
 	}
 	return self;

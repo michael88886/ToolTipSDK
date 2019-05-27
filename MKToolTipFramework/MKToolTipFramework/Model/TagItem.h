@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSMutableArray *titles;
 
+// - Create new TagItem object
 +(TagItem *) newTag;
 
 @end

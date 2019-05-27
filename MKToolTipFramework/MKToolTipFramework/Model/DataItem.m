@@ -15,7 +15,6 @@
 @end
 
 
-
 @implementation DataItem
 
 // MARK: - Static init
@@ -42,6 +41,7 @@
 	// Top level
 	NSArray *topNode = [data objectForKey:@"data"];
 	NSInteger i = 0;
+	// Feed data
 	while (i < limit) {
 		// Item in [Data] array
 		NSDictionary *item = [topNode objectAtIndex:i];

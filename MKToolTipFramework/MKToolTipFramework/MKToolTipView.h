@@ -10,8 +10,9 @@
 
 @class DataItem;
 
-@interface MKToolTipView : UIView
 
+@interface MKToolTipView : UIView
+// - Create new MKToolTipView object
 +(MKToolTipView *) newToolTip;
 
 @end

@@ -83,6 +83,7 @@
 	tooltip.frame = CGRectMake(0, 0, width, height);
 	tooltip.center = self.center;
 	[self addSubview: tooltip];
+	// Update tooltip info
 	[tooltip showTooltip: data];
 }
 

@@ -7,8 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
-#import "MKToolTipView.h"
+#import <UIKit/UIKit.h>
 #import "DataItem.h"
 #import "TagItem.h"
 #import "OwnerInfoItem.h"
@@ -131,10 +130,11 @@
 	
 	// When
 	ToolTip *tooltip = [[NSBundle bundleForClass: [ToolTip class]] loadNibNamed:@"ToolTip" owner:self options: nil].firstObject;
-	[tooltip showTooltip:dataObject];
+	[tooltip feedData: dataObject];
+	NSLog(@"Test: %@", tooltip.usrName.text);
 	
 	// Then
-	NSString *dispID = [NSString stringWithFormat:@"ID: %@", dataObject.dataID];
+	NSString *dispID = [NSString stringWithFormat:@"Data ID: %@", dataObject.dataID];
 	XCTAssertEqualObjects(tooltip.idLabel.text, dispID, "Test display <id>");
 	
 	NSString *disppgTot = [NSString stringWithFormat:@"%@ / %@", dataObject.page, dataObject.total];
@@ -169,6 +169,10 @@
 	XCTAssertEqualObjects(tooltip.tagTextView.text, tagText, "Test display <tags>");
 	
 	OwnerInfoItem *ownerInfo = dataObject.owner;
+	XCTAssertNotEqual(ownerInfo.ownerID, [NSNumber numberWithInteger: -1]);
+	NSString *usrID = [NSString stringWithFormat:@"User ID: %@", ownerInfo.ownerID];
+	XCTAssertEqualObjects(tooltip.usrIDLabel.text, usrID, "Test display <user id>");
+	
 	NSString *usrTitle = [[NSString stringWithFormat:@"%@.", [ownerInfo title]] uppercaseString];
 	XCTAssertEqualObjects(tooltip.usrTitle.text, usrTitle, "Test display <user title>");
 	
