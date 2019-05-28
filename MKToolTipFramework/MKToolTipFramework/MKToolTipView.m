@@ -47,37 +47,20 @@
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithURL:url
                                         completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                            NSLog(@"data: %@", data);
-                                            
+                                            // Cast http response for status code
                                             NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
                                             if (httpResponse.statusCode == 200) {
-                                                
+                                                // Get main to update UI once retrived data
                                                 dispatch_async(dispatch_get_main_queue(), ^{
                                                     [self parseData:data];
                                                 });
                                             }
                                             else {
+                                                
                                                 NSLog(@"Status code: %ld", (long)[httpResponse statusCode]);
                                             }
                                         }];
     [task resume];
-    
-}
-
-// - Send reqeust to API for data
--(void) requestData {
-	// API URL
-	NSString *urlStr = @"https://dummyapi.io/api/post?limit=1";
-	// Encode URL
-	NSString *encodeUrlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-	// Retrive json data
-	NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:encodeUrlStr]];
-	//  No Json data found, skip parse
-	if (!jsonData) {
-		NSLog(@"Json data not avaliable.");
-		return;
-	}
-	[self parseData: jsonData];
 }
 
 // - Convert data to json format
