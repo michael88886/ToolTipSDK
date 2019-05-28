@@ -28,29 +28,34 @@
 	[super tearDown];
 }
 
-// Test retrive data from given URL, and convert it to json format data.
--(void) testRequestData {
-	XCTestExpectation *expectataion = [self expectationWithDescription: @"Test PASSED: Get JSON data from API"];
-	
-	// Given
-	NSString *urlStr = @"https://dummyapi.io/api/post?limit=1";
-	NSString *encodeUrlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-	
-	// When
-	NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:encodeUrlStr]];
-	
-	// Then
-	XCTAssertNotNil(jsonData);
-	[expectataion fulfill];
-	
-	[self waitForExpectations: [NSArray arrayWithObject: expectataion]  
-					  timeout:10];
+// Test connect to server
+-(void) testConnection {
+    // Given
+    NSURL *url = [NSURL URLWithString:@"https://dummyapi.io/api/post?limit=1"];
+    XCTestExpectation *expectataion = [self expectationWithDescription: @"Test connection"];
+    __block NSUInteger statusCode = -1;
+    __block NSError *fetchError = nil;
+    
+    // When
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithURL:url
+                                        completionHandler:^(NSData *data, NSURLResponse * response, NSError *error) {
+                                            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                                            statusCode = httpResponse.statusCode;
+                                            fetchError = error;
+                                            [expectataion fulfill];
+                                        }];
+    [task resume];
+    [self waitForExpectations:[NSArray arrayWithObjects:expectataion, nil] timeout:10];
+    
+    // Then
+    XCTAssertNil(fetchError);
+    XCTAssertEqual(statusCode, 200);
 }
 
 // Test convert raw data to json format 
 -(void) testConvertDataToJsonFormat {
 	XCTestExpectation *expectataion = [self expectationWithDescription: @"Test PASSED: Get JSON data from API"];
-	
 	// Given
 	NSBundle *bundle = [NSBundle bundleForClass: [self class]];
 	NSURL *path = [bundle URLForResource: @"data" withExtension: @"json"];

@@ -34,9 +34,34 @@
 	
 	if (self = [super initWithFrame: CGRectMake(0, 0, width, height)]) {
 		self.backgroundColor = [UIColor colorWithWhite:0 alpha: 0.2];
-		[self requestData];
+//        [self requestData];
+        [self fetchData];
 	}
 	return self;
+}
+
+
+-(void) fetchData {
+    NSLog(@"fetch dtaa");
+    NSURL *url = [NSURL URLWithString:@"https://dummyapi.io/api/post?limit=1"];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithURL:url
+                                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                            NSLog(@"data: %@", data);
+                                            
+                                            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+                                            if (httpResponse.statusCode == 200) {
+                                                
+                                                dispatch_async(dispatch_get_main_queue(), ^{
+                                                    [self parseData:data];
+                                                });
+                                            }
+                                            else {
+                                                NSLog(@"Status code: %ld", (long)[httpResponse statusCode]);
+                                            }
+                                        }];
+    [task resume];
+    
 }
 
 // - Send reqeust to API for data
@@ -68,7 +93,7 @@
 	DataItem *dataItem = [DataItem newDataWith: jsonObject];	
 	
 	// Show tooltip view with data
-	[self showToolTip: dataItem];
+    [self showToolTip: dataItem];
 }
 
 // - Show tooltip
